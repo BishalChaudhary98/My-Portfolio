@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Manager | UK Business Growth</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #c0392b;
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+        
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card.recommended {
+            border: 3px solid #e74c3c;
+            position: relative;
+        }
+        
+        .service-card.recommended::before {
+            content: "⭐ RECOMMENDED";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        
+        .price {
+            font-size: 2rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .service-card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        /* Portfolio */
+        .portfolio-item {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .result-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .result-number {
+            font-size: 2rem;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        /* Contact */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">SocialGrow UK</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Social Media Manager for UK Businesses</h1>
+            <p>Proven results for cleaning businesses and service companies</p>
+            <a href="#contact" class="btn">Get Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="price">£80/month</div>
+                    <h3>Basic Package</h3>
+                    <ul>
+                        <li>2 posts/week (8 posts/month)</li>
+                        <li>15 min/day website checks</li>
+                        <li>No reels, no strategy</li>
+                        <li>Minimal presence</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="price">£140/month</div>
+                    <h3>Growth Package</h3>
+                    <ul>
+                        <li>3 posts/week (12 posts/month)</li>
+                        <li>1 reel/week (4 reels/month)</li>
+                        <li>30 min/day website checks</li>
+                        <li>Basic monthly report</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+
+                <div class="service-card recommended">
+                    <div class="price">£200/month</div>
+                    <h3>Standard Package</h3>
+                    <ul>
+                        <li>Every other day posting (15 posts/month)</li>
+                        <li>2 reels/week (8 reels/month)</li>
+                        <li>Monthly website updates & SEO</li>
+                        <li>Detailed monthly report</li>
+                        <li>Basic ad campaign management</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="price">£300/month</div>
+                    <h3>Premium Package</h3>
+                    <ul>
+                        <li>5 posts/week (20 posts/month)</li>
+                        <li>3 reels/week (12 reels/month)</li>
+                        <li>Bi-weekly website management</li>
+                        <li>Advanced ad campaigns</li>
+                        <li>Strategy calls & optimization</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Case Study: UK Cleaning Business</h2>
+            <div class="portfolio-item">
+                <h3>Challenge</h3>
+                <p>A growing cleaning business in London had poor social media presence with low engagement and minimal online visibility.</p>
+                
+                <h3>Solution</h3>
+                <p>Implemented consistent posting strategy, created engaging content, and optimized their website for local SEO.</p>
+                
+                <h3>Results</h3>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-number">300%</div>
+                        <p>Increase in Organic Reach</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">504</div>
+                        <p>Views per Post</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">271</div>
+                        <p>Average Reach</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">3x</div>
+                        <p>Better Performance</p>
+                    </div>
+                </div>
+                <p><strong>One of my posts performed as well as their previous three posts combined.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get Your Free Consultation</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="business">Business Type</label>
+                    <input type="text" id="business" name="business" placeholder="e.g., Cleaning Service, Plumbing, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell me about your business goals</label>
+                    <textarea id="message" name="message" placeholder="What are your main challenges with social media?"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SocialGrow UK. Professional Social Media Management for UK Businesses.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you within 24 hours.');
+        });
+    </script>
+</body>
+</html>
