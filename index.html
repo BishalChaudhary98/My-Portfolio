@@ -868,6 +868,34 @@ footer {
   }
 }
 
+/* Footer Link Styles */
+.footer-link {
+  color: #f59e0b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-link:hover {
+  color: #fbbf24;
+  border-bottom-color: #fbbf24;
+}
+
+.footer-link:active {
+  transform: translateY(1px);
+}
+
+/* Ensure footer links are visible on dark background */
+.footer-section .footer-link {
+  color: #fbbf24;
+  font-weight: 500;
+}
+
+.footer-section .footer-link:hover {
+  color: #f59e0b;
+  border-bottom-color: #f59e0b;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .location-banner-content {
@@ -1487,9 +1515,9 @@ footer {
 
           <div class="footer-section">
             <h3>Connect With Me</h3>
-            <p>📧 bishal.chaudhary@example.com</p>
-            <p>💬 WhatsApp: +977 98XX XXX XXX</p>
-            <p>📍 Kathmandu, Nepal</p>
+            <p>📧 Email: <a href="mailto:bchy362@gmail.com" class="footer-link">bchy362@gmail.com</a></p>
+<p>💬 WhatsApp: <a href="https://wa.me/9779807438650" class="footer-link" target="_blank" rel="noopener noreferrer">+977 9807438650</a></p>
+            <p>📍Location: Kathmandu, Nepal</p>
             <p>🌍 Serving clients worldwide</p>
             <p>🕒 Available 9 AM - 6 PM (Nepal Time)</p>
             <p>⚡ 24-hour response guarantee</p>
