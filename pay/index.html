@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Professional Social Media Management Services by Bishal R Chaudhary. Transparent pricing, proven results. Content creation, ad management, and strategic growth for your business.">
+        <title>Professional Social Media Management | Rate Card | Bishal R
+            Chaudhary</title>
+
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #111827;
+            background: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Rate Card Section */
+        .rate-card-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            color: #111827;
+        }
+
+        .rate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .rate-category {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .rate-category h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .rate-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .rate-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        .rate-description {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rate-includes {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .rate-includes li {
+            color: #374151;
+            font-size: 0.9rem;
+            padding: 0.25rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .rate-includes li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Packages Section */
+        .packages-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .package-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .package-card.recommended {
+            border: 2px solid #2563eb;
+            position: relative;
+        }
+
+        .package-card.recommended::before {
+            content: '⭐ RECOMMENDED';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2563eb;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .package-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .package-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .package-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .package-features li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #374151;
+        }
+
+        .package-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 4rem 0;
+            background: #1f2937;
+            color: white;
+        }
+
+        .contact-section .section-title {
+            color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f59e0b;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            color: #111827;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .rate-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="hero">
+                    <h1>Professional Social Media Management</h1>
+                    <p>Transparent pricing, proven results. Complete rate card
+                        for all social media services by Bishal R Chaudhary</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Rate Card Section -->
+        <section class="rate-card-section">
+            <div class="container">
+                <h2 class="section-title">Complete Service Rate Card</h2>
+
+                <div class="rate-grid">
+                    <!-- Content Creation -->
+                    <div class="rate-category">
+                        <h3>📝 Content Creation</h3>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 500 per post</div>
+                            <div class="rate-description">Professional social
+                                media posts with engaging content</div>
+                        </div>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 800 per reel</div>
+                            <div class="rate-description">High-quality video
+                                content for maximum engagement</div>
+                        </div>
+                    </div>
+
+                    <!-- Management Services -->
+                    <div class="rate-category">
+                        <h3>🎯 Management Services</h3>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 500/week - Basic
+                                Management</div>
+                            <div class="rate-description">Essential coordination
+                                and monitoring</div>
+                            <ul class="rate-includes">
+                                <li>Content scheduling and posting</li>
+                                <li>Simple monitoring and engagement</li>
+                                <li>Basic problem solving</li>
+                                <li>Weekly client updates</li>
+                            </ul>
+                        </div>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 1,000/week - Advanced
+                                Management</div>
+                            <div class="rate-description">Everything in Basic
+                                PLUS:</div>
+                            <ul class="rate-includes">
+                                <li>Monthly content strategy and calendar</li>
+                                <li>Competitor analysis and monitoring</li>
+                                <li>Hashtag research for maximum reach</li>
+                                <li>Active audience engagement</li>
+                                <li>Performance optimization</li>
+                                <li>Monthly strategy calls</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Website Services -->
+                    <div class="rate-category">
+                        <h3>🌐 Website Services</h3>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 1,000 per hour</div>
+                            <div class="rate-description">Professional website
+                                development and maintenance</div>
+                        </div>
+                    </div>
+
+                    <!-- Reporting -->
+                    <div class="rate-category">
+                        <h3>📊 Reporting</h3>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 400/month - Basic
+                                Report</div>
+                            <div class="rate-description">Essential performance
+                                overview</div>
+                            <ul class="rate-includes">
+                                <li>Post performance metrics</li>
+                                <li>Follower growth tracking</li>
+                                <li>Basic reach and engagement data</li>
+                                <li>Simple 1-page summary</li>
+                            </ul>
+                        </div>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 500/month - Detailed
+                                Report</div>
+                            <div class="rate-description">Everything in Basic
+                                PLUS:</div>
+                            <ul class="rate-includes">
+                                <li>Audience insights and demographics</li>
+                                <li>Best performing content analysis</li>
+                                <li>Competitor comparison</li>
+                                <li>Growth recommendations</li>
+                                <li>ROI analysis</li>
+                                <li>Visual charts and graphs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Advertising -->
+                    <div class="rate-category">
+                        <h3>💰 Advertising Management</h3>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 1,000/week - Basic
+                                Ads</div>
+                            <div class="rate-description">Essential advertising
+                                management</div>
+                            <ul class="rate-includes">
+                                <li>Simple boost posts promotion</li>
+                                <li>Local targeting setup</li>
+                                <li>Basic audience targeting</li>
+                                <li>Budget management</li>
+                                <li>Weekly performance monitoring</li>
+                                <li>Simple optimization</li>
+                            </ul>
+                        </div>
+                        <div class="rate-item">
+                            <div class="rate-price">NPR 2,000/week - Advanced
+                                Ads</div>
+                            <div class="rate-description">Everything in Basic
+                                PLUS:</div>
+                            <ul class="rate-includes">
+                                <li>Multiple campaign types</li>
+                                <li>Advanced targeting and retargeting</li>
+                                <li>A/B testing campaigns</li>
+                                <li>Landing page optimization</li>
+                                <li>Conversion tracking</li>
+                                <li>Daily monitoring and optimization</li>
+                                <li>Detailed ad performance reports</li>
+                                <li>Seasonal campaign adjustments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Packages -->
+        <section class="packages-section">
+            <div class="container">
+                <h2 class="section-title">Popular Package Combinations</h2>
+
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-price">NPR 3,800/week</div>
+                        <h3 class="package-title">Basic Package</h3>
+                        <ul class="package-features">
+                            <li>2 posts/week (NPR 1,000)</li>
+                            <li>15 min/day website work (NPR 1,750)</li>
+                            <li>Basic management (NPR 500)</li>
+                            <li>Quality buffer (NPR 550)</li>
+                        </ul>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-price">NPR 6,650/week</div>
+                        <h3 class="package-title">Growth Package</h3>
+                        <ul class="package-features">
+                            <li>3 posts/week (NPR 1,500)</li>
+                            <li>1 reel/week (NPR 800)</li>
+                            <li>30 min/day website work (NPR 3,500)</li>
+                            <li>Basic management (NPR 500)</li>
+                            <li>Basic monthly report (NPR 350)</li>
+                        </ul>
+                    </div>
+
+                    <div class="package-card recommended">
+                        <div class="package-price">NPR 9,000/week</div>
+                        <h3 class="package-title">Standard Package</h3>
+                        <ul class="package-features">
+                            <li>15 posts/month (NPR 1,875)</li>
+                            <li>2 reels/week (NPR 1,600)</li>
+                            <li>Website updates & SEO (NPR 2,500)</li>
+                            <li>Basic ad management (NPR 1,000)</li>
+                            <li>Advanced management (NPR 1,000)</li>
+                            <li>Detailed monthly report (NPR 1,025)</li>
+                        </ul>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-price">NPR 12,000/week</div>
+                        <h3 class="package-title">Premium Package</h3>
+                        <ul class="package-features">
+                            <li>5 posts/week (NPR 2,500)</li>
+                            <li>3 reels/week (NPR 2,400)</li>
+                            <li>Bi-weekly website management (NPR 3,000)</li>
+                            <li>Advanced ad management (NPR 2,000)</li>
+                            <li>Advanced management (NPR 1,000)</li>
+                            <li>Detailed monthly report (NPR 1,100)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get Started Today</h2>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Ready to Grow Your Business?</h3>
+                        <p>Professional social media management with transparent
+                            pricing and proven results. Let's discuss which
+                            package works best for your business goals.</p>
+
+                        <h3>Contact Information</h3>
+                        <p>📧 Email: bishal.chaudhary@example.com</p>
+                        <p>💬 WhatsApp: +977 98XX XXX XXX</p>
+                        <p>📍 Location: Kathmandu, Nepal</p>
+                        <p>🌍 Service Area: Global (Remote Services)</p>
+                        <p>⏰ Response Time: Within 24 hours</p>
+
+                        <h3>Why Choose Our Services?</h3>
+                        <p>✅ Transparent pricing with no hidden costs</p>
+                        <p>✅ Proven track record with 300% growth results</p>
+                        <p>✅ Professional service at competitive rates</p>
+                        <p>✅ Flexible packages to suit any budget</p>
+                    </div>
+
+                    <form class="contact-form"
+                        action="https://api.web3forms.com/submit" method="POST"
+                        id="contactForm">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key"
+                            value="3646e465-f337-4ad2-a8e6-b5bf8632b3cf">
+                        <input type="hidden" name="subject"
+                            value="New Inquiry - Social Media Services">
+                        <input type="hidden" name="from_name"
+                            value="Social Media Rate Card Website">
+                        <input type="checkbox" name="botcheck"
+                            style="display: none;">
+
+                        <h3>Get Your Custom Quote</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName"
+                                    name="first_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName"
+                                    name="last_name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Business Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="businessType">Business Type
+                                    *</label>
+                                <select id="businessType" name="business_type"
+                                    required>
+                                    <option value>Select your business
+                                        type</option>
+                                    <option value="cleaning">Cleaning
+                                        Service</option>
+                                    <option value="restaurant">Restaurant/Food
+                                        Service</option>
+                                    <option value="retail">Retail</option>
+                                    <option
+                                        value="healthcare">Healthcare</option>
+                                    <option
+                                        value="fitness">Fitness/Wellness</option>
+                                    <option value="beauty">Beauty/Salon</option>
+                                    <option value="real-estate">Real
+                                        Estate</option>
+                                    <option value="education">Education</option>
+                                    <option
+                                        value="technology">Technology</option>
+                                    <option
+                                        value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Weekly Budget Range</label>
+                                <select id="budget" name="budget_range">
+                                    <option value>Select budget range</option>
+                                    <option value="under-5000">Under NPR
+                                        5,000/week</option>
+                                    <option value="5000-10000">NPR 5,000 -
+                                        10,000/week</option>
+                                    <option value="10000-15000">NPR 10,000 -
+                                        15,000/week</option>
+                                    <option value="15000-plus">NPR
+                                        15,000+/week</option>
+                                    <option value="flexible">Flexible based on
+                                        ROI</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interestedServices">Interested Services
+                                (Select all that apply)</label>
+                            <select id="interestedServices"
+                                name="interested_services" multiple>
+                                <option value="content-creation">Content
+                                    Creation</option>
+                                <option value="social-management">Social Media
+                                    Management</option>
+                                <option value="website-work">Website
+                                    Development</option>
+                                <option value="advertising">Paid
+                                    Advertising</option>
+                                <option value="reporting">Analytics &
+                                    Reporting</option>
+                                <option value="full-package">Complete
+                                    Package</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">When do you want to
+                                start?</label>
+                            <select id="timeline" name="timeline">
+                                <option value>Select timeline</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="within-week">Within a
+                                    week</option>
+                                <option value="within-month">Within a
+                                    month</option>
+                                <option value="just-exploring">Just exploring
+                                    options</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell us about your goals
+                                *</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="What are your main goals? What challenges are you facing with social media? Any specific requirements?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Get Custom
+                            Quote</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Bishal R Chaudhary. Professional Social Media
+                    Management Services. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert(`Thank you ${formData.get('first_name')}! I'll get back to you within 24 hours with a custom quote. 🚀`);
+                    this.reset();
+                } else {
+                    alert('There was an error sending your message. Please try again or contact me directly.');
+                }
+            } catch (error) {
+                alert('There was an error sending your message. Please check your internet connection and try again.');
+            } finally {
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        console.log('🚀 Social Media Rate Card Website Loaded Successfully!');
+    </script>
+    </body>
+</html>
