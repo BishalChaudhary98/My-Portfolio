@@ -207,6 +207,33 @@
             font-weight: bold;
         }
 
+        .package-btn {
+            margin-top: 1rem;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .package-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -5px rgba(37, 99, 235, 0.4);
+        }
+
+        .recommended .package-btn {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .recommended .package-btn:hover {
+            box-shadow: 0 8px 20px -5px rgba(245, 158, 11, 0.4);
+        }
+
         /* Contact Section */
         .contact-section {
             padding: 4rem 0;
@@ -337,7 +364,7 @@
         <header>
             <div class="container">
                 <div class="hero">
-                    <h1>Professional Social Media Management</h1>
+                    <h1>Social Media Management</h1>
                     <p>Transparent pricing, proven results. Complete rate card
                         for all social media services by Bishal Chaudhary</p>
                 </div>
@@ -354,12 +381,12 @@
                     <div class="rate-category">
                         <h3>📝 Content Creation</h3>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 500 per post</div>
+                            <div class="rate-price">£3.50 per post</div>
                             <div class="rate-description">Professional social
                                 media posts with engaging content</div>
                         </div>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 800 per reel</div>
+                            <div class="rate-price">£5 per reel</div>
                             <div class="rate-description">High-quality video
                                 content for maximum engagement</div>
                         </div>
@@ -369,7 +396,7 @@
                     <div class="rate-category">
                         <h3>🎯 Management Services</h3>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 500/week - Basic
+                            <div class="rate-price">£3.50/week - Basic
                                 Management</div>
                             <div class="rate-description">Essential coordination
                                 and monitoring</div>
@@ -377,21 +404,19 @@
                                 <li>Content scheduling and posting</li>
                                 <li>Simple monitoring and engagement</li>
                                 <li>Basic problem solving</li>
-                                <li>Weekly client updates</li>
                             </ul>
                         </div>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 1,000/week - Advanced
+                            <div class="rate-price">£6/week - Advanced
                                 Management</div>
                             <div class="rate-description">Everything in Basic
                                 PLUS:</div>
                             <ul class="rate-includes">
-                                <li>Monthly content strategy and calendar</li>
+                                <li>Strategic planning and content calendar</li>
                                 <li>Competitor analysis and monitoring</li>
                                 <li>Hashtag research for maximum reach</li>
                                 <li>Active audience engagement</li>
                                 <li>Performance optimization</li>
-                                <li>Monthly strategy calls</li>
                             </ul>
                         </div>
                     </div>
@@ -400,7 +425,7 @@
                     <div class="rate-category">
                         <h3>🌐 Website Services</h3>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 1,000 per hour</div>
+                            <div class="rate-price">£6 per hour</div>
                             <div class="rate-description">Professional website
                                 development and maintenance</div>
                         </div>
@@ -410,7 +435,7 @@
                     <div class="rate-category">
                         <h3>📊 Reporting</h3>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 400/month - Basic
+                            <div class="rate-price">£2/month - Basic
                                 Report</div>
                             <div class="rate-description">Essential performance
                                 overview</div>
@@ -422,7 +447,7 @@
                             </ul>
                         </div>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 500/month - Detailed
+                            <div class="rate-price">£4/month - Detailed
                                 Report</div>
                             <div class="rate-description">Everything in Basic
                                 PLUS:</div>
@@ -441,7 +466,7 @@
                     <div class="rate-category">
                         <h3>💰 Advertising Management</h3>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 1,000/week - Basic
+                            <div class="rate-price">£6/week - Basic
                                 Ads</div>
                             <div class="rate-description">Essential advertising
                                 management</div>
@@ -455,14 +480,14 @@
                             </ul>
                         </div>
                         <div class="rate-item">
-                            <div class="rate-price">NPR 2,000/week - Advanced
+                            <div class="rate-price">£12/week - Advanced
                                 Ads</div>
                             <div class="rate-description">Everything in Basic
                                 PLUS:</div>
                             <ul class="rate-includes">
                                 <li>Multiple campaign types</li>
                                 <li>Advanced targeting and retargeting</li>
-                                <li>A/B testing campaigns</li>
+                                                                <li>A/B testing of different ad creatives</li>
                                 <li>Landing page optimization</li>
                                 <li>Conversion tracking</li>
                                 <li>Daily monitoring and optimization</li>
@@ -476,62 +501,72 @@
         </section>
 
         <!-- Popular Packages -->
-        <section class="packages-section">
-            <div class="container">
-                <h2 class="section-title">Popular Package Combinations</h2>
+<section class="packages-section">
+    <div class="container">
+        <h2 class="section-title">Popular Package Combinations</h2>
 
-                <div class="packages-grid">
-                    <div class="package-card">
-                        <div class="package-price">NPR 3,800/week</div>
-                        <h3 class="package-title">Basic Package</h3>
-                        <ul class="package-features">
-                            <li>2 posts/week (NPR 1,000)</li>
-                            <li>15 min/day website work (NPR 1,750)</li>
-                            <li>Basic management (NPR 500)</li>
-                            <li>Quality buffer (NPR 550)</li>
-                        </ul>
-                    </div>
-
-                    <div class="package-card">
-                        <div class="package-price">NPR 6,650/week</div>
-                        <h3 class="package-title">Growth Package</h3>
-                        <ul class="package-features">
-                            <li>3 posts/week (NPR 1,500)</li>
-                            <li>1 reel/week (NPR 800)</li>
-                            <li>30 min/day website work (NPR 3,500)</li>
-                            <li>Basic management (NPR 500)</li>
-                            <li>Basic monthly report (NPR 350)</li>
-                        </ul>
-                    </div>
-
-                    <div class="package-card recommended">
-                        <div class="package-price">NPR 9,000/week</div>
-                        <h3 class="package-title">Standard Package</h3>
-                        <ul class="package-features">
-                            <li>15 posts/month (NPR 1,875)</li>
-                            <li>2 reels/week (NPR 1,600)</li>
-                            <li>Website updates & SEO (NPR 2,500)</li>
-                            <li>Basic ad management (NPR 1,000)</li>
-                            <li>Advanced management (NPR 1,000)</li>
-                            <li>Detailed monthly report (NPR 1,025)</li>
-                        </ul>
-                    </div>
-
-                    <div class="package-card">
-                        <div class="package-price">NPR 12,000/week</div>
-                        <h3 class="package-title">Premium Package</h3>
-                        <ul class="package-features">
-                            <li>5 posts/week (NPR 2,500)</li>
-                            <li>3 reels/week (NPR 2,400)</li>
-                            <li>Bi-weekly website management (NPR 3,000)</li>
-                            <li>Advanced ad management (NPR 2,000)</li>
-                            <li>Advanced management (NPR 1,000)</li>
-                            <li>Detailed monthly report (NPR 1,100)</li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="packages-grid">
+            <div class="package-card">
+                <div class="package-price">£16.5/week</div>
+                <h3 class="package-title">Basic Package</h3>
+                <ul class="package-features">
+                    <li>2 posts/week (£7)</li>
+                    <li>1 hour/week website work (£6)</li>
+                    <li>Basic management (£3.50)</li>
+                </ul>
+                <button class="btn package-btn" onclick="selectPackage('basic')">
+                    Select Basic Package
+                </button>
             </div>
-        </section>
+
+            <div class="package-card">
+                <div class="package-price">£25/week</div>
+                <h3 class="package-title">Growth Package</h3>
+                <ul class="package-features">
+                    <li>3 posts/week (£10.50)</li>
+                    <li>1 reel/week (£5)</li>
+                    <li>1 hours/week website work (£6)</li>
+                    <li>Basic management (£3.50)</li>
+                </ul>
+                <button class="btn package-btn" onclick="selectPackage('growth')">
+                    Select Growth Package
+                </button>
+            </div>
+
+            <div class="package-card recommended">
+                <div class="package-price">£49/week</div>
+                <h3 class="package-title">Standard Package</h3>
+                <ul class="package-features">
+                    <li>4 posts/week (£14)</li>
+                    <li>2 reels/week (£10)</li>
+                    <li>2 hours/week website work (£12)</li>
+                    <li>Basic ad management (£6)</li>
+                    <li>Advanced management (£6)</li>
+                    <li>Detailed monthly report (£4)</li>
+                </ul>
+                <button class="btn package-btn" onclick="selectPackage('standard')">
+                    Select Standard Package ⭐
+                </button>
+            </div>
+
+            <div class="package-card">
+                <div class="package-price">£63.5/week</div>
+                <h3 class="package-title">Premium Package</h3>
+                <ul class="package-features">
+                    <li>5 posts/week (£17.50)</li>
+                    <li>3 reels/week (£15)</li>
+                    <li>2 hours/week website work (£12)</li>
+                    <li>Advanced ad management (£12)</li>
+                    <li>Advanced management (£6)</li>
+                    <li>Detailed monthly report (£4)</li>
+                </ul>
+                <button class="btn package-btn" onclick="selectPackage('premium')">
+                    Select Premium Package
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Contact Section -->
 <section class="contact-section">
@@ -564,44 +599,8 @@
             </div>
 
             <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-
-            <div class="form-group">
                 <label for="company">Company/Business Name</label>
                 <input type="text" id="company" name="company">
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="businessType">Business Type *</label>
-                    <select id="businessType" name="business_type" required>
-                        <option value="">Select your business type</option>
-                        <option value="cleaning">Cleaning Service</option>
-                        <option value="restaurant">Restaurant/Food Service</option>
-                        <option value="retail">Retail</option>
-                        <option value="healthcare">Healthcare</option>
-                        <option value="fitness">Fitness/Wellness</option>
-                        <option value="beauty">Beauty/Salon</option>
-                        <option value="real-estate">Real Estate</option>
-                        <option value="education">Education</option>
-                        <option value="technology">Technology</option>
-                        <option value="consulting">Consulting</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="timeline">When do you want to start?</label>
-                    <select id="timeline" name="timeline">
-                        <option value="">Select timeline</option>
-                        <option value="immediately">Immediately</option>
-                        <option value="within-week">Within a week</option>
-                        <option value="within-month">Within a month</option>
-                        <option value="just-exploring">Just exploring options</option>
-                    </select>
-                </div>
             </div>
 
             <!-- Service Selection -->
@@ -613,27 +612,24 @@
                         <label for="postsPerWeek">Posts per Week *</label>
                         <select id="postsPerWeek" name="posts_per_week" required>
                             <option value="">Select posts/week</option>
-                            <option value="0">0 posts/week</option>
-                            <option value="1">1 post/week (NPR 500)</option>
-                            <option value="2">2 posts/week (NPR 1,000)</option>
-                            <option value="3">3 posts/week (NPR 1,500)</option>
-                            <option value="4">4 posts/week (NPR 2,000)</option>
-                            <option value="5">5 posts/week (NPR 2,500)</option>
-                            <option value="6">6 posts/week (NPR 3,000)</option>
-                            <option value="7">7 posts/week (NPR 3,500)</option>
+                            <option value="2">2 posts/week (£7)</option>
+                            <option value="3">3 posts/week (£10.50)</option>
+                            <option value="4">4 posts/week (£14)</option>
+                            <option value="5">5 posts/week (£17.50)</option>
+                            <option value="6">6 posts/week (£21)</option>
+                            <option value="7">7 posts/week (£24.50)</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="reelsPerWeek">Reels per Week *</label>
                         <select id="reelsPerWeek" name="reels_per_week" required>
-                            <option value="">Select reels/week</option>
-                            <option value="0">0 reels/week</option>
-                            <option value="1">1 reel/week (NPR 800)</option>
-                            <option value="2">2 reels/week (NPR 1,600)</option>
-                            <option value="3">3 reels/week (NPR 2,400)</option>
-                            <option value="4">4 reels/week (NPR 3,200)</option>
-                            <option value="5">5 reels/week (NPR 4,000)</option>
+                            <option value="0">Select reels/week</option>
+                            <option value="1">1 reel/week (£5)</option>
+                            <option value="2">2 reels/week (£10)</option>
+                            <option value="3">3 reels/week (£15)</option>
+                            <option value="4">4 reels/week (£20)</option>
+                            <option value="5">5 reels/week (£25)</option>
                         </select>
                     </div>
                 </div>
@@ -646,8 +642,8 @@
                     <label for="managementType">Choose Management Level *</label>
                     <select id="managementType" name="management_type" required>
                         <option value="">Select management service</option>
-                        <option value="basic">Basic Management (NPR 500/week)</option>
-                        <option value="advanced">Advanced Management (NPR 1,000/week)</option>
+                        <option value="basic">Basic Management (£3.50/week)</option>
+                        <option value="advanced">Advanced Management (£6/week)</option>
                     </select>
                 </div>
             </div>
@@ -656,19 +652,17 @@
                 <h4 style="margin-bottom: 1rem; color: #2563eb; font-size: 1.1rem;">🌐 Website Work</h4>
                 
                 <div class="form-group">
-                    <label for="websiteHours">Website Hours per Month *</label>
-                    <select id="websiteHours" name="website_hours" required>
-                        <option value="">Select hours/month</option>
-                        <option value="0">0 hours/month</option>
-                        <option value="2">2 hours/month (NPR 2,000)</option>
-                        <option value="4">4 hours/month (NPR 4,000)</option>
-                        <option value="6">6 hours/month (NPR 6,000)</option>
-                        <option value="8">8 hours/month (NPR 8,000)</option>
-                        <option value="10">10 hours/month (NPR 10,000)</option>
-                        <option value="12">12 hours/month (NPR 12,000)</option>
-                        <option value="15">15 hours/month (NPR 15,000)</option>
-                        <option value="20">20 hours/month (NPR 20,000)</option>
-                        <option value="custom">Custom hours (specify in message)</option>
+                    <label for="websiteHours">Website Hours per Month</label>
+                    <select id="websiteHours" name="website_hours">
+                        <option value="0">0 hours/month (£0)</option>
+                        <option value="2">2 hours/month (£12)</option>
+                        <option value="4">4 hours/month (£24)</option>
+                        <option value="6">6 hours/month (£36)</option>
+                        <option value="8">8 hours/month (£48)</option>
+                        <option value="10">10 hours/month (£60)</option>
+                        <option value="12">12 hours/month (£72)</option>
+                        <option value="15">15 hours/month (£90)</option>
+                        <option value="20">20 hours/month (£120)</option>
                     </select>
                 </div>
             </div>
@@ -680,8 +674,8 @@
                     <label for="reportingType">Monthly Reporting</label>
                     <select id="reportingType" name="reporting_type">
                         <option value="none">No reporting needed</option>
-                        <option value="basic">Basic Report (NPR 400/month)</option>
-                        <option value="detailed">Detailed Report (NPR 500/month)</option>
+                        <option value="basic">Basic Report (£2.50/month)</option>
+                        <option value="detailed">Detailed Report (£3.50/month)</option>
                     </select>
                 </div>
             </div>
@@ -690,29 +684,24 @@
                 <h4 style="margin-bottom: 1rem; color: #2563eb; font-size: 1.1rem;">💰 Advertising Management</h4>
                 
                 <div class="form-group">
-                    <label for="advertisingType">Choose Advertising Level *</label>
-                    <select id="advertisingType" name="advertising_type" required>
-                        <option value="">Select advertising service</option>
-                        <option value="none">No advertising management</option>
-                        <option value="basic">Basic Ads Management (NPR 1,000/week)</option>
-                        <option value="advanced">Advanced Ads Management (NPR 2,000/week)</option>
+                    <label for="advertisingType">Choose Advertising Level</label>
+                    <select id="advertisingType" name="advertising_type">
+                        <option value="none">No advertising needed</option>
+                        <option value="basic">Basic Ads Management (£6/week)</option>
+                        <option value="advanced">Advanced Ads Management (£12/week)</option>
                     </select>
                 </div>
             </div>
 
             <!-- Estimated Cost Display -->
-            <div id="costEstimate" style="background: linear-gradient(135deg, #2563eb, #1e40af); color: white; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; text-align: center; display: none;">
-                <h4 style="margin-bottom: 0.5rem;">Estimated Weekly Cost</h4>
-                <div id="weeklyTotal" style="font-size: 1.5rem; font-weight: bold;"></div>
-                <div id="monthlyTotal" style="font-size: 1rem; opacity: 0.9; margin-top: 0.5rem;"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Additional Requirements & Goals *</label>
-                <textarea id="message" name="message" rows="4" 
-                    placeholder="Tell us about your specific goals, any special requirements, or questions you have about the services..." 
-                    required></textarea>
-            </div>
+<div id="costEstimate" style="background: linear-gradient(135deg, #2563eb, #1e40af); color: white; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; text-align: center; display: none;">
+    <h1 style="margin-bottom: 0.5rem;">You have to pay Weekly</h1>
+    <h4 style="margin-bottom: 0.5rem;">Estimated Weekly Cost</h4>
+    <div id="weeklyTotal" style="font-size: 1.5rem; font-weight: bold;"></div>
+    <div id="weeklyTotalNPR" style="font-size: 1.2rem; font-weight: 600; margin-top: 0.5rem; opacity: 0.95;"></div>
+    <div id="monthlyTotal" style="font-size: 1rem; opacity: 0.9; margin-top: 0.5rem;"></div>
+    <div id="monthlyTotalNPR" style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.25rem;"></div>
+</div>
 
             <button type="submit" class="btn">Get Custom Quote</button>
         </form>
@@ -729,6 +718,79 @@
 
         <!-- JavaScript -->
         <script>
+// Package data
+const packages = {
+    basic: {
+        posts: '2',
+        reels: '0',
+        management: 'basic',
+        website: '4',
+        reporting: 'none',
+        advertising: 'none'
+    },
+    growth: {
+        posts: '3',
+        reels: '1',
+        management: 'basic',
+        website: '4',
+        reporting: 'none',
+        advertising: 'none'
+    },
+    standard: {
+        posts: '4',
+        reels: '2',
+        management: 'advanced',
+        website: '8',
+        reporting: 'detailed',
+        advertising: 'basic'
+    },
+    premium: {
+        posts: '5',
+        reels: '3',
+        management: 'advanced',
+        website: '8',
+        reporting: 'detailed',
+        advertising: 'advanced'
+    }
+};
+
+// Function to select a package and fill the form
+function selectPackage(packageType) {
+    const packageData = packages[packageType];
+    
+    if (packageData) {
+        // Fill form fields
+        document.getElementById('postsPerWeek').value = packageData.posts;
+        document.getElementById('reelsPerWeek').value = packageData.reels;
+        document.getElementById('managementType').value = packageData.management;
+        document.getElementById('websiteHours').value = packageData.website;
+        document.getElementById('reportingType').value = packageData.reporting;
+        document.getElementById('advertisingType').value = packageData.advertising;
+        
+        // Calculate cost
+        calculateCost();
+        
+        // Scroll to form
+        document.querySelector('.contact-section').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        
+        // Add a small delay and highlight the form
+        setTimeout(() => {
+            const form = document.querySelector('.contact-form');
+            form.style.border = '3px solid #2563eb';
+            form.style.boxShadow = '0 0 20px rgba(37, 99, 235, 0.3)';
+            
+            // Remove highlight after 3 seconds
+            setTimeout(() => {
+                form.style.border = '';
+                form.style.boxShadow = '';
+            }, 3000);
+        }, 500);
+    }
+}
+
 // Cost calculation function
 function calculateCost() {
     const postsPerWeek = parseInt(document.getElementById('postsPerWeek').value) || 0;
@@ -739,35 +801,45 @@ function calculateCost() {
     const advertisingType = document.getElementById('advertisingType').value;
 
     let weeklyTotal = 0;
+    const conversionRate = 190.5; // GBP to NPR
 
     // Content costs
-    weeklyTotal += postsPerWeek * 500; // NPR 500 per post
-    weeklyTotal += reelsPerWeek * 800; // NPR 800 per reel
+    weeklyTotal += postsPerWeek * 3.5; // £3.50 per post
+    weeklyTotal += reelsPerWeek * 5; // £5 per reel
 
     // Management costs
-    if (managementType === 'basic') weeklyTotal += 500;
-    if (managementType === 'advanced') weeklyTotal += 1000;
+    if (managementType === 'basic') weeklyTotal += 3.5;
+    if (managementType === 'advanced') weeklyTotal += 6;
 
     // Website costs (monthly to weekly)
-    weeklyTotal += (websiteHours * 1000) / 4; // NPR 1000 per hour, divided by 4 weeks
+    weeklyTotal += (websiteHours * 6) / 4; // £6 per hour, divided by 4 weeks
 
     // Reporting costs (monthly to weekly)
-    if (reportingType === 'basic') weeklyTotal += 400 / 4;
-    if (reportingType === 'detailed') weeklyTotal += 500 / 4;
+    if (reportingType === 'basic') weeklyTotal += 2 / 4;
+    if (reportingType === 'detailed') weeklyTotal += 4 / 4;
 
     // Advertising costs
-    if (advertisingType === 'basic') weeklyTotal += 1000;
-    if (advertisingType === 'advanced') weeklyTotal += 2000;
+    if (advertisingType === 'basic') weeklyTotal += 6;
+    if (advertisingType === 'advanced') weeklyTotal += 12;
+
+    // Calculate NPR equivalents
+    const weeklyTotalNPR = weeklyTotal * conversionRate;
+    const monthlyTotal = weeklyTotal * 4;
+    const monthlyTotalNPR = monthlyTotal * conversionRate;
 
     // Display results
     const costEstimate = document.getElementById('costEstimate');
     const weeklyTotalElement = document.getElementById('weeklyTotal');
+    const weeklyTotalNPRElement = document.getElementById('weeklyTotalNPR');
     const monthlyTotalElement = document.getElementById('monthlyTotal');
+    const monthlyTotalNPRElement = document.getElementById('monthlyTotalNPR');
 
     if (weeklyTotal > 0) {
         costEstimate.style.display = 'block';
-        weeklyTotalElement.textContent = `NPR ${weeklyTotal.toLocaleString()}/week`;
-        monthlyTotalElement.textContent = `Approximately NPR ${(weeklyTotal * 4).toLocaleString()}/month`;
+        weeklyTotalElement.textContent = `£${weeklyTotal.toFixed(2)}/week`;
+        weeklyTotalNPRElement.textContent = `NPR ${weeklyTotalNPR.toLocaleString()}/week`;
+        monthlyTotalElement.textContent = `Approximately £${monthlyTotal.toFixed(2)}/month`;
+        monthlyTotalNPRElement.textContent = `Approximately NPR ${monthlyTotalNPR.toLocaleString()}/month`;
     } else {
         costEstimate.style.display = 'none';
     }
