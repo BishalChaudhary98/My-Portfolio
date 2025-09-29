@@ -842,6 +842,32 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Contact Link Styles */
+.contact-link {
+  color: #f59e0b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.contact-link:hover {
+  color: #fbbf24;
+  border-bottom-color: #fbbf24;
+  transform: translateY(-1px);
+}
+
+.contact-link:active {
+  transform: translateY(0);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .contact-link {
+    font-size: 0.95rem;
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .location-banner-content {
@@ -1260,24 +1286,24 @@ footer {
         </div>
 
         <div class="contact-methods">
-          <div class="contact-item primary">
-            <div class="contact-icon">📧</div>
-            <div class="contact-details">
-              <h4>Email Me</h4>
-              <p>bishal.chaudhary@example.com</p>
-              <span class="contact-note">Best for detailed inquiries</span>
-            </div>
-          </div>
+  <div class="contact-item primary">
+    <div class="contact-icon">📧</div>
+    <div class="contact-details">
+      <h4>Email Me</h4>
+      <p><a href="mailto:bchy362@gmail.com" class="contact-link">bchy362@gmail.com</a></p>
+      <span class="contact-note">Best for detailed inquiries</span>
+    </div>
+  </div>
 
-          <div class="contact-item primary">
-            <div class="contact-icon">💬</div>
-            <div class="contact-details">
-              <h4>WhatsApp</h4>
-              <p>+977 98XX XXX XXX</p>
-              <span class="contact-note">Quick responses & voice calls</span>
-            </div>
-          </div>
-        </div>
+  <div class="contact-item primary">
+    <div class="contact-icon">💬</div>
+    <div class="contact-details">
+      <h4>WhatsApp</h4>
+      <p><a href="https://wa.me/9779807438650" class="contact-link" target="_blank" rel="noopener noreferrer">+977 9807438650</a></p>
+      <span class="contact-note">Quick responses & voice calls</span>
+    </div>
+  </div>
+</div>
 
         <div class="contact-details-grid">
           <div class="detail-item">
